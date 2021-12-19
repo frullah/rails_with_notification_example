@@ -6,6 +6,8 @@ i will make this as a simple blog app that when there is a new post it gives a n
 
 ## TODO
 
-- [x] create `post` scaffold
+- [x] create `post` scaffold with attribute `content`
+- [ ] show notification in the right side of the layout
+- [ ] create `notification` model with attribute `message`
 - [ ] show notification when there is a new post
 
