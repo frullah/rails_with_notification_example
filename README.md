@@ -7,7 +7,9 @@ i will make this as a simple blog app that when there is a new post it gives a n
 ## TODO
 
 - [x] create `post` scaffold with attribute `content`
-- [ ] show notification in the right side of the layout
-- [ ] create `notification` model with attribute `message`
-- [ ] show notification when there is a new post
-
+- [x] show notification in the right side of the layout
+- [x] create `notification` model with attribute `message`
+- [ ] show notification when there is a new post. how can i do it ?
+    - using turbo ?
+    - using stimulus ?
+    - using ActionCable ?
