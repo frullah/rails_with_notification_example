@@ -8,8 +8,9 @@ i will make this as a simple blog app that when there is a new post it gives a n
 
 - [x] create `post` scaffold with attribute `content`
 - [x] show notification in the right side of the layout
-- [x] create `notification` model with attribute `message`
-- [ ] show notification when there is a new post. how can i do it ?
+- [x] ~~create `notification` model with attribute `message`~~
+- [x] create `notification` model with [`noticed`](https://github.com/excid3/noticed) gem
+- [ ] show notification to the user when there is a new post. how can i do it ?
     - using turbo ?
     - using stimulus ?
     - using ActionCable ?
