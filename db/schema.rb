@@ -16,6 +16,13 @@ ActiveRecord::Schema.define(version: 2021_12_19_161951) do
     t.string "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "recipient_type", null: false
+    t.integer "recipient_id", null: false
+    t.string "type"
+    t.json "params"
+    t.datetime "read_at", precision: 6
+    t.index ["read_at"], name: "index_notifications_on_read_at"
+    t.index ["recipient_type", "recipient_id"], name: "index_notifications_on_recipient"
   end
 
   create_table "posts", force: :cascade do |t|
