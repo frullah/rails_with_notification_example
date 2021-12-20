@@ -1,8 +1,8 @@
-<div class="border p-2 mt-2">
+<a href="<%= url_for notification.params[:post] %>" class="border p-2 mt-2 block no-underline">
   <div class="text-xl">
     <%= notification.params[:post].title %>
   </div>
 
   <%= time_ago_in_words notification.params[:post].created_at %>
   <%= time_ago_in_words notification.created_at %>
-</div>
+</a>
