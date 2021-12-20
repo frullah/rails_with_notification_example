@@ -17,11 +17,11 @@ class NewPost < Noticed::Base
 
   # Define helper methods to make rendering easier.
   #
-  # def message
-  #   t(".message")
-  # end
+  def message
+    t(".message")
+  end
   #
-  # def url
-  #   post_path(params[:post])
-  # end
+  def url
+    post_path(params[:post])
+  end
 end

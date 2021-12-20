@@ -13,9 +13,7 @@
       <main>
         <%= yield %>
       </main>
-      <aside class="border p-4">
-        <h2 class="my-0">Notifications</h2>
-      </aside>
+      <%= render "shared/notifications" %>
     </div>
     <script src="https://unpkg.com/windicss-runtime-dom"></script>
   </body>
