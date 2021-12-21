@@ -1,4 +1,7 @@
 <aside class="border p-4">
   <h2 class="my-0">Notifications</h2>
-  <%= render current_user.notifications %>
+  <%= turbo_stream_from "notifications" %>
+  <%= turbo_frame_tag "notifications" do %>
+    <%= render current_user.notifications %>
+  <% end %>
 </aside>

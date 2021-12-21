@@ -8,6 +8,8 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
+    # TODO: remove this
+    NewPost.with(post: @post).deliver(current_user)
   end
 
   # GET /posts/new
